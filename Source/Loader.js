@@ -18,16 +18,14 @@ provides: [Loader]
 ...
 */
 
-(function(context){
-
-if (!context) return;
+if (typeof exports != 'undefined') (function(){
 
 for (var key in this) if (!GLOBAL_ITEMS.contains(key)){
-	context[key] = this[key];
+	exports[key] = this[key];
 }
 
-context.into = function(object){
-	Object.append(object, context);
+exports.into = function(object){
+	Object.append(object, exports);
 };
 
-})((typeof exports != 'undefined') ? exports : null);
+})();
