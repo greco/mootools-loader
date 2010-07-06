@@ -2,7 +2,7 @@ var keys = [];
 for (var key in GLOBAL)
 	keys.push(key);
 
-require('./MooTools').into(GLOBAL);
+require('./MooTools').apply(GLOBAL);
 
 console.log('------------------');
 console.log('## New Globals');

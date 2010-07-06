@@ -24,7 +24,7 @@ for (var key in this) if (!GLOBAL_ITEMS.contains(key)){
 	exports[key] = this[key];
 }
 
-exports.into = function(object){
+exports.apply = function(object){
 	Object.append(object, exports);
 };
 

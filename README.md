@@ -18,7 +18,7 @@ With Additional MooTools Components
 
 Using within a CommonJS Environment (for example NodeJS)
 
-	require('./MooTools').into(GLOBAL);
+	require('./MooTools').apply(GLOBAL);
 	
 Or
 
