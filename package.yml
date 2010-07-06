@@ -1,0 +1,17 @@
+name: "Loader"
+
+exports: "mootools-loader.js"
+
+web: "[cpojer.net](http://cpojer.net)"
+
+description: "Loads MooTools as a CommonJS Module."
+
+license: "[MIT License](http://mootools.net/license.txt)"
+
+copyright: "&copy; [Christoph Pojer](http://cpojer.net/)"
+
+authors: "[Christoph Pojer](http://cpojer.net)"
+
+sources:
+    - "Source/Prefix.js"
+    - "Source/Loader.js"
